@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<link rel='stylesheet' id='wp-block-library-css' href='wp-includes/css/dist/block-library/style.min109c.css?ver=6.6.2' type='text/css' media='all' />
+
+<link data-minify="1" rel='stylesheet' id='titan-adminbar-styles-css' href='wp-content/cache/min/1/attorna/demo2/wp-content/plugins/anti-spam/assets/css/admin-bar186c.css?ver=1733679064' type='text/css' media='all' />
+
+<link data-minify="1" rel='stylesheet' id='font-awesome-css' href='wp-content/cache/min/1/attorna/demo2/wp-content/plugins/goodlayers-core/plugins/fontawesome/font-awesome186c.css?ver=1733679064' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='fa6-css' href='wp-content/cache/min/1/attorna/demo2/wp-content/plugins/goodlayers-core/plugins/fa6/all186c.css?ver=1733679064' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='elegant-font-css' href='wp-content/cache/min/1/attorna/demo2/wp-content/plugins/goodlayers-core/plugins/elegant/elegant-font186c.css?ver=1733679064' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='gdlr-core-plugin-css' href='wp-content/cache/min/1/attorna/demo2/wp-content/plugins/goodlayers-core/plugins/style186c.css?ver=1733679064' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='gdlr-core-page-builder-css' href='wp-content/cache/min/1/attorna/demo2/wp-content/plugins/goodlayers-core/include/css/page-builder186c.css?ver=1733679064' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='newsletter-css' href='wp-content/cache/min/1/attorna/demo2/wp-content/plugins/newsletter/style186c.css?ver=1733679064' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='attorna-style-core-css' href='wp-content/cache/min/1/attorna/demo2/wp-content/themes/attorna/css/style-core186c.css?ver=1733679064' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='attorna-custom-style-css' href='wp-content/cache/min/1/attorna/demo2/wp-content/uploads/attorna-style-custom186c.css?ver=1733679064' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='attorna-mmenu-css' href='wp-content/cache/min/1/attorna/demo2/wp-content/themes/attorna/css/mmenu6a6a.css?ver=1733679065' type='text/css' media='all' />
+<script type="text/javascript" src="wp-includes/js/jquery/jquery.minf43b.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="wp-includes/js/jquery/jquery-migrate.min5589.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="wp-content/plugins/revslider/sr6/assets/js/rbtools.min7a23.js?ver=6.7.23" async id="tp-tools-js"></script>
+<script type="text/javascript" src="wp-content/plugins/revslider/sr6/assets/js/rs6.min7a23.js?ver=6.7.23" async id="revmin-js"></script>
+<script data-minify="1" type="text/javascript" src="wp-content/cache/min/1/attorna/demo2/wp-content/plugins/snazzy-maps/snazzymaps738e.js?ver=1733679066" id="snazzymaps-js-js" data-rocket-defer defer></script>
+
+<script>function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
+				try {
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) || (e.l=="fullwidth" || e.layout=="fullwidth") ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
+					if(e.layout==="fullscreen" || e.l==="fullscreen")
+						newh = Math.max(e.mh,window.RSIH);
+					else{
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,
+							sl;
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}
+					var el = document.getElementById(e.c);
+					if (el!==null && el) el.style.height = newh+"px";
+					el = document.getElementById(e.c+"_wrapper");
+					if (el!==null && el) {
+						el.style.height = newh+"px";
+						el.style.display = "block";
+					}
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}
+			//});
+		  };</script>
+<meta name="generator" content="WP Rocket 3.17.3.1" data-wpr-features="wpr_defer_js wpr_minify_js wpr_oci wpr_minify_css wpr_cdn wpr_desktop wpr_preload_links" /><link rel="stylesheet" href="whatsapp.css"></head>
+
+<body class="page-template-default page page-id-1977 gdlr-core-body attorna-body attorna-body-front attorna-full  attorna-with-sticky-navigation  attorna-blockquote-style-1 gdlr-core-link-to-lightbox" >
+      <!-- Botão e Balão -->
+<a href="https://wa.me/5541992760819" class="zap-glass" target="_blank" aria-label="Fale com um advogado">
+   <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+</a><div class="zap-msg-bubble">💬 Precisa de ajuda jurídica?<br><strong>Fale com um advogado agora mesmo!</strong></div><div class="attorna-mobile-header-wrap">
+         <div class="attorna-mobile-header attorna-header-background attorna-style-slide attorna-sticky-mobile-navigation" id="attorna-mobile-header">
+            <div class="attorna-mobile-header-container attorna-container clearfix">
+               <div class="attorna-logo attorna-item-pdlr">
+                  <div class="attorna-logo-inner">
+                     <a class="site-logo" href="index.html" title="Advogado Direito Médico Curitiba">
+                     <img src="wp-content/uploads/2019/03/logo-light.png" alt="Jonas Stephâni Advocacia - Especialista em Direito Médico" width="370" height="65" title="Jonas Stephâni Advocacia Direito Médico" />
+                     </a>
+                  </div>
+               </div>
+               <div class="attorna-mobile-menu-right">
+                  <div class="attorna-main-menu-search" id="attorna-mobile-top-search">
+                     <i class="fa fa-search" aria-hidden="true"></i>
+                  </div>
+                  <div class="attorna-top-search-wrap">
+                     <div class="attorna-top-search-close"></div>
+                     <div class="attorna-top-search-row">
+                        <div class="attorna-top-search-cell">
+                           <form role="search" method="get" class="search-form" action="#">
+                              <input type="text" class="search-field attorna-title-font" placeholder="Buscar..." value="" name="s">
+                              <div class="attorna-top-search-submit"><i class="fa fa-search" aria-hidden="true"></i></div>
+                              <input type="submit" class="search-submit" value="Buscar">
+                              <div class="attorna-top-search-close"><i class="icon_close"></i></div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="attorna-mobile-menu">
+                     <a class="attorna-mm-menu-button attorna-mobile-menu-button attorna-mobile-button-hamburger" href="#attorna-mobile-menu" aria-label="Menu">
+                     <span></span>
+                     </a>
+                     <div class="attorna-mm-menu-wrap attorna-navigation-font" id="attorna-mobile-menu" data-slide="right">
+                        <ul id="menu-main-navigation" class="m-menu">
+                           <li class="menu-item menu-item-home">
+                              <a href="index.html" title="Início">Home</a>
+                           </li>
+                           <li class="menu-item">
+                              <a href="#" title="Sobre o Escritório">Sobre Nós</a>
+                           </li>
+                           <li class="menu-item menu-item-has-children">
+                              <a href="#" title="Áreas de Atuação">Áreas de Atuação</a>
+                              <ul class="sub-menu">
+                                 <li class="menu-item">
+                                    <a href="erro-medico.html" title="Erro Médico">Erro Médico e Responsabilidade</a>
+                                 </li>
+<li class="menu-item">
+    <a href="defesa-medicos-erro-medico.html" title="Defesa de Médicos em Casos de Erro Médico">
+        Defesa de Médicos - Erro Médico
+    </a>
+</li>
+
+								 defesa-medicos-erro-medico
+                                 <li class="menu-item">
+                                    <a href="direito-penal-medico.html" title="Direito Penal Médico">Direito Penal Médico</a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="processos-eticos.html" title="Processos Éticos">Processos Ético-Profissionais</a>
+                                 </li>
+                                 
+                              </ul>
+                           </li>
+                           <li class="menu-item">
+                              <a href="https://advstephani.com.br/news/blog-news" title="Blog Jurídico">Blog</a>
+                           </li>
+                           <li class="menu-item">
+                              <a href="contato.html" title="Entre em Contato">Contato</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+<div  class="attorna-body-outer-wrapper ">
+		<div  class="attorna-body-wrapper clearfix  attorna-with-transparent-header attorna-with-frame">
+	<div class="attorna-header-background-transparent" >
+	               <div class="attorna-top-bar" >
+                  <div class="attorna-top-bar-background" ></div>
+                  <div class="attorna-top-bar-container attorna-container " >
+                     <div class="attorna-top-bar-container-inner clearfix" >
+                        <div class="attorna-top-bar-left attorna-item-pdlr">
+                           <i class="fa fa-phone" style="font-size: 15px ;color: #b1976b ;margin-right: 10px ;"  ></i>41 99276 0819
+                           <div style="margin-left: 10px; margin-right: 13px; display: inline;">&#183;</div>
+                           <i class="icon_clock_alt" style="font-size: 15px ;color: #b1976b ;margin-right: 10px ;"  ></i>Advogado em Curitiba
+                        </div>
+                        <a class="attorna-top-bar-right-button" href="#" target="_self"  ><i class="fa fa-comment-o" ></i>Contato </a>
+                        <div class="attorna-top-bar-right attorna-item-pdlr">
+                           <div class="attorna-top-bar-right-social">
+                              <a href="https://facebook.com" target="_blank" class="attorna-top-bar-social-icon" title="Facebook">
+                              <i class="fab fa-facebook-f"></i>
+                              </a>
+                              <a href="https://linkedin.com" target="_blank" class="attorna-top-bar-social-icon" title="LinkedIn">
+                              <i class="fab fa-linkedin-in"></i>
+                              </a>
+                              <a href="https://pinterest.com" target="_blank" class="attorna-top-bar-social-icon" title="Pinterest">
+                              <i class="fab fa-pinterest-p"></i>
+                              </a>
+                              <a href="https://twitter.com" target="_blank" class="attorna-top-bar-social-icon" title="Twitter">
+                              <i class="fab fa-twitter"></i>
+                              </a>
+                              <a href="https://instagram.com" target="_blank" class="attorna-top-bar-social-icon" title="Instagram">
+                              <i class="fab fa-instagram"></i>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+<header class="attorna-header-wrap attorna-header-style-plain attorna-style-menu-right attorna-sticky-navigation attorna-style-slide" data-navigation-offset="75px">
+                  <div class="attorna-header-background"></div>
+                  <div class="attorna-header-container attorna-container">
+                     <div class="attorna-header-container-inner clearfix">
+                        <div class="attorna-logo attorna-item-pdlr">
+                           <div class="attorna-logo-inner">
+                              <a class="" href="index.html">
+                              <img src="wp-content/uploads/2019/03/logo-light.png" alt="Jonas Stephâni Advocacia - Direito Médico" width="370" height="65" title="Jonas Stephâni Advocacia"/>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="attorna-navigation attorna-item-pdlr clearfix">
+                           <div class="attorna-main-menu" id="attorna-main-menu">
+                              <ul id="menu-main-navigation-1" class="sf-menu">
+                                 <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-5167 attorna-normal-menu">
+                                    <a href="index.html" class="sf-with-ul-pre">Home</a>
+                                 </li>
+                                 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5123 attorna-normal-menu">
+                                    <a href="#" class="sf-with-ul-pre">Sobre Nós</a>
+                                 </li>
+                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6900 attorna-normal-menu">
+                                    <a href="#" class="sf-with-ul-pre">Áreas de Atuação</a>
+                                    <ul class="sub-menu">
+                                       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6519" data-size="60">
+                                          <a href="erro-medico.html">Erro Médico e Responsabilidade Civil</a>
+                                       </li>
+									   <li class="menu-item">
+    <a href="defesa-medicos-erro-medico.html" title="Defesa de Médicos em Casos de Erro Médico">
+        Defesa de Médicos - Erro Médico
+    </a>
+</li>
+
+                                       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6518" data-size="60">
+                                          <a href="direito-penal-medico.html">Direito Penal Médico</a>
+                                       </li>
+                                       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6517" data-size="60">
+                                          <a href="processos-eticos.html">Processos Ético-Profissionais</a>
+                                       </li>
+                                       
+                                    </ul>
+                                 </li>
+                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5172 attorna-normal-menu">
+                                    <a href="https://advstephani.com.br/news/blog-news">Blog</a>
+                                 </li>
+                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5207 attorna-normal-menu">
+                                    <a href="contato.html">Contato</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="attorna-main-menu-right-wrap clearfix">
+                              <div class="attorna-main-menu-search" id="attorna-top-search">
+                                 <i class="fa fa-search"></i>
+                              </div>
+                              <div class="attorna-top-search-wrap">
+                                 <div class="attorna-top-search-close"></div>
+                                 <div class="attorna-top-search-row">
+                                    <div class="attorna-top-search-cell">
+                                       <form role="search" method="get" class="search-form" action="#">
+                                          <input type="text" class="search-field attorna-title-font" placeholder="Buscar..." value="" name="s">
+                                          <div class="attorna-top-search-submit">
+                                             <i class="fa fa-search"></i>
+                                          </div>
+                                          <input type="submit" class="search-submit" value="Buscar">
+                                          <div class="attorna-top-search-close">
+                                             <i class="icon_close"></i>
+                                          </div>
+                                       </form>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </header>
+			   <!-- header --></div>
+			   <div class="attorna-page-wrapper" id="attorna-page-wrapper" >
+			   <div class="gdlr-core-page-builder-body clearfix">
+			   <div class="gdlr-core-pbf-wrapper " style="margin: 0px 0px 0px 0px;padding: 330px 0px 140px 0px;"  id="gdlr-core-wrapper-1" ><div class="gdlr-core-pbf-background-wrap"  ><div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url(wp-content/uploads/2019/02/layer-bg1.jpg) ;background-size: cover ;background-repeat: no-repeat ;background-position: center ;"  data-parallax-speed="0.3"  ></div></div><div class="gdlr-core-pbf-wrapper-content gdlr-core-js "  data-gdlr-animation="fadeIn" data-gdlr-animation-duration="600ms" data-gdlr-animation-offset="0.8"  ><div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container" ><div class="gdlr-core-pbf-element" ></div></div></div></div>
+			   
+			   <div class="gdlr-core-pbf-wrapper " style="padding: 40px 0px 40px 0px;" ><div class="gdlr-core-pbf-background-wrap" style="background-color: #f5f5f5 ;"  ></div><div class="gdlr-core-pbf-wrapper-content gdlr-core-js "   ><div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container" >
+			   
+			   <div class="gdlr-core-pbf-column gdlr-core-column-40 gdlr-core-column-first">
+    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js" style="padding: 50px 20px 0px 20px;">
+        <div class="gdlr-core-pbf-background-wrap"></div>
+        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js">
+            <!-- Título -->
+            <div class="gdlr-core-pbf-element">
+                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix gdlr-core-left-align gdlr-core-title-item-caption-bottom gdlr-core-item-pdlr" style="padding-bottom: 25px;">
+                    <div class="gdlr-core-title-item-title-wrap">
+                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" style="font-size: 32px; font-weight: 700; letter-spacing: 0px; text-transform: none;">
+                            Entre em Contato Conosco
+                            <span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Texto introdutório -->
+            <div class="gdlr-core-pbf-element">
+                <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 35px;">
+                    <div class="gdlr-core-text-box-item-content" style="font-size: 16px; text-transform: none;">
+                        <p>
+                            Precisa de ajuda jurídica especializada em <strong>Direito Médico</strong> em Curitiba e região? Preencha o formulário abaixo para entrar em contato com nossa equipe. Estamos prontos para oferecer atendimento personalizado e estratégico para proteger sua carreira e seus direitos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Formulário de contato -->
+            <div class="gdlr-core-pbf-element">
+                <div class="gdlr-core-contact-form-7-item gdlr-core-item-pdlr gdlr-core-item-pdb">
+                    <div class="wpcf7" id="wpcf7-f1979-p1977-o1" lang="pt-BR" dir="ltr">
+                        <div class="screen-reader-response">
+                            <p role="status" aria-live="polite" aria-atomic="true"></p>
+                            <ul></ul>
+                        </div>
+                        <form action="https://seusite.com.br/contact" method="post" class="wpcf7-form" novalidate="novalidate">
+                            <div class="gdlr-core-input-wrap gdlr-core-large gdlr-core-full-width gdlr-core-with-column gdlr-core-no-border">
+                                <!-- Nome -->
+                                <div class="gdlr-core-column-60">
+                                    <p>
+                                        <span class="wpcf7-form-control-wrap" data-name="your-name">
+                                            <input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" placeholder="Nome*" value="" type="text" name="your-name" />
+                                        </span>
+                                    </p>
+                                </div>
+                                <!-- Email -->
+                                <div class="gdlr-core-column-60">
+                                    <p>
+                                        <span class="wpcf7-form-control-wrap" data-name="your-email">
+                                            <input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" placeholder="E-mail*" value="" type="email" name="your-email" />
+                                        </span>
+                                    </p>
+                                </div>
+                                <!-- Assunto -->
+                                <div class="gdlr-core-column-60">
+                                    <p>
+                                        <span class="wpcf7-form-control-wrap" data-name="your-subject">
+                                            <input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" placeholder="Assunto*" value="" type="text" name="your-subject" />
+                                        </span>
+                                    </p>
+                                </div>
+                                <!-- Mensagem -->
+                                <div class="gdlr-core-column-60">
+                                    <p>
+                                        <span class="wpcf7-form-control-wrap" data-name="your-message">
+                                            <textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" placeholder="Mensagem*" name="your-message"></textarea>
+                                        </span>
+                                    </p>
+                                </div>
+                                <!-- Botão de Enviar -->
+                                <div class="gdlr-core-column-60 gdlr-core-left-align">
+                                    <p>
+                                        <input class="wpcf7-form-control wpcf7-submit has-spinner gdlr-core-full" type="submit" value="Enviar Agora" />
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="gdlr-core-pbf-column gdlr-core-column-20">
+    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js" style="padding: 50px 20px 0px 20px;">
+        <div class="gdlr-core-pbf-background-wrap"></div>
+        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js">
+            <!-- Localização -->
+            <div class="gdlr-core-pbf-element">
+                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix gdlr-core-left-align gdlr-core-title-item-caption-bottom gdlr-core-item-pdlr" style="padding-bottom: 25px;">
+                    <div class="gdlr-core-title-item-title-wrap">
+                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" style="font-size: 28px; font-weight: 700; letter-spacing: 0px; text-transform: none;">Localização
+                            <span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="gdlr-core-pbf-element">
+                <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 0px;">
+                    <div class="gdlr-core-text-box-item-content" style="font-size: 16px;">
+                        <p>Rua Albano Reis, 478
+ <br>
+Ahú - Curitiba, Paraná</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Contato -->
+            <div class="gdlr-core-pbf-element">
+                <div class="gdlr-core-icon-list-item gdlr-core-item-pdlr gdlr-core-item-pdb clearfix gdlr-core-left-align gdlr-core-style-1">
+                    <ul>
+                        <li class="gdlr-core-skin-divider gdlr-core-with-hover clearfix">
+                            <span class="gdlr-core-icon-list-icon-wrap gdlr-core-left">
+                                <i class="gdlr-core-icon-list-icon-hover fa fa-envelope-o" style="font-size: 16px;"></i>
+                                <i class="gdlr-core-icon-list-icon fa fa-envelope-o" style="font-size: 16px; width: 16px;"></i>
+                            </span>
+                            <div class="gdlr-core-icon-list-content-wrap">
+                                <span class="gdlr-core-icon-list-content" style="font-size: 16px;">
+                                    <a href="mailto:contato@advstephani.com.br">contato@advstephani.com.br</a>
+                                </span>
+                            </div>
+                        </li>
+                        <li class="gdlr-core-skin-divider gdlr-core-with-hover clearfix">
+                            <span class="gdlr-core-icon-list-icon-wrap gdlr-core-left">
+                                <i class="gdlr-core-icon-list-icon-hover fa fa-phone" style="font-size: 16px;"></i>
+                                <i class="gdlr-core-icon-list-icon fa fa-phone" style="font-size: 16px; width: 16px;"></i>
+                            </span>
+                            <div class="gdlr-core-icon-list-content-wrap">
+                                <span class="gdlr-core-icon-list-content" style="font-size: 16px;">
+                                    +55 41 99276 0819
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Mapa -->
+            <div class="gdlr-core-pbf-element">
+                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix gdlr-core-left-align gdlr-core-title-item-caption-bottom gdlr-core-item-pdlr" style="padding-bottom: 25px;">
+                    <div class="gdlr-core-title-item-title-wrap">
+                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" style="font-size: 28px; font-weight: 700; letter-spacing: 0px; text-transform: none;">Mapa
+                            <span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="gdlr-core-pbf-element">
+                <div class="gdlr-core-wp-google-map-plugin-item gdlr-core-item-pdlr gdlr-core-item-pdb" style="padding-bottom: 0px;">
+                    <div class="wpgmp_map_container wpgmp-map-3" rel="map3" data-plugin-version="4.6.8">
+                        <div class="wpgmp_map_parent">
+                            <div class="wpgmp_map" style="width:100%; height:260px;" id="map3" data-map-id="3">
+                                <!-- Substitua abaixo pelo iframe do Google Maps -->
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.0013956944586!2d-49.2730538246114!3d-25.40476387757797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce6a43f461c5b%3A0xb88a6fcf5b408686!2sR.%20Albano%20Reis%2C%20478%20-%20Ah%C3%BA%2C%20Curitiba%20-%20PR%2C%2080530-380!5e0!3m2!1spt-BR!2sbr!4v1737445667965!5m2!1spt-BR!2sbr" width="100%" height="260" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+            <footer data-wpr-lazyrender="1">
+               <div class="attorna-footer-wrapper">
+                  <div class="attorna-footer-container attorna-container clearfix">
+                     <div class="attorna-footer-column attorna-item-pdlr attorna-column-15">
+                        <div id="text-1" class="widget widget_text attorna-widget">
+                           <div class="textwidget">
+                              <p><img decoding="async" class="alignnone size-full wp-image-6129" src="wp-content/uploads/2019/03/logo-light.png" alt="" width="210" sizes="(max-width: 400px) 100vw, 400px" /><br />
+                                 <span class="gdlr-core-space-shortcode" style="margin-top: -27px;"></span><br />
+                                 Assessoria jurídica especializada em direito médico, protegendo profissionais de saúde e pacientes.
+                              </p>
+                              <div style="padding-bottom: 0px; display: block;">
+                                 <a href="https://facebook.com" target="_blank" class="gdlr-core-social-network-icon" title="Facebook" style="font-size: 16px; color: #b1976b;" rel="noopener">
+                                 <i class="fab fa-facebook-f"></i>
+                                 </a>
+                                 <a href="https://linkedin.com" target="_blank" class="gdlr-core-social-network-icon" title="LinkedIn" style="font-size: 16px; color: #b1976b;" rel="noopener">
+                                 <i class="fab fa-linkedin-in"></i>
+                                 </a>
+                                 <a href="https://instagram.com" target="_blank" class="gdlr-core-social-network-icon" title="Instagram" style="font-size: 16px; color: #b1976b;" rel="noopener">
+                                 <i class="fab fa-instagram"></i>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="attorna-footer-column attorna-item-pdlr attorna-column-15">
+                        <div id="text-7" class="widget widget_text attorna-widget">
+                           <h3 class="attorna-widget-title">Contato</h3>
+                           <span class="clear"></span>			
+                           <div class="textwidget">
+                              <p>Rua Albano Reis, 478 <br /> Ahú, Curitiba/PR.<br />
+                                 Curitiba, Paraná
+                              </p>
+                              <p><span style="color: #fff;">(41) 99276-0819</span><br />
+                                 <span style="color: #a69a87;"><a href="mailto:contato@advstephani.com.br">contato@advstephani.com.br</a></span>
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="attorna-footer-column attorna-item-pdlr attorna-column-30">
+                        <div id="gdlr-core-custom-menu-widget-4" class="widget widget_gdlr-core-custom-menu-widget attorna-widget">
+                           <h3 class="attorna-widget-title">Áreas de Atuação</h3>
+                           <span class="clear"></span>
+                           <div class="menu-case-study-container">
+                              <ul id="menu-case-study" class="gdlr-core-custom-menu-widget gdlr-core-menu-style-half">
+                                 <li class="menu-item"><a href="advogado-para-medicos-curitiba">Direito do Médico</a></li>
+                                 <li class="menu-item"><a href="advogado-erro-medico-curitiba">Direito do Paciente</a></li>
+                                 <li class="menu-item"><a href="#">Processos Ético-Profissionais</a></li>
+                                 <li class="menu-item"><a href="#">Biodireito e Bioética</a></li>
+                                 <li class="menu-item"><a href="#">Diretivas Antecipadas</a></li>
+                                 <li class="menu-item"><a href="#">Erro Médico</a></li>
+                                 <li class="menu-item"><a href="#">Responsabilidade Hospitalar</a></li>
+                                 <li class="menu-item"><a href="#">Consentimento Informado</a></li>
+                                 <li class="menu-item"><a href="#">Propriedade Intelectual na Saúde</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="attorna-copyright-wrapper">
+                  <div class="attorna-copyright-container attorna-container clearfix">
+                     <div class="attorna-copyright-left attorna-item-pdlr">© 2025 Escritório de Advocacia em Direito Médico. Todos os direitos reservados.</div>
+                     <div class="attorna-copyright-right attorna-item-pdlr">
+                        <a href="#" style="margin-left:21px;">Início</a>
+                        <a href="#" style="margin-left:21px;">Casos</a>
+                        <a href="#" style="margin-left:21px;">Sobre</a>
+                        <a href="#" style="margin-left:21px;">Legal</a>
+                        <a href="#" style="margin-left:21px;">Privacidade</a>
+                     </div>
+                  </div>
+               </div>
+            </footer>
+</div>
+</div>
+
+<script>
+			window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+			window.RS_MODULES.defered = false;
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';
+		</script>
+<link data-minify="1" rel='stylesheet' id='contact-form-7-css' href='wp-content/cache/min/1/attorna/demo2/wp-content/plugins/contact-form-7/includes/css/stylesc5aa.css?ver=1733679408' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='wpgmp-frontend_css-css' href='wp-content/cache/min/1/attorna/demo2/wp-content/plugins/wp-google-map-plugin/assets/css/frontend44b8.css?ver=1733797039' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='rs-plugin-settings-css' href='wp-content/cache/min/1/attorna/demo2/wp-content/plugins/revslider/sr6/assets/css/rs66a6a.css?ver=1733679065' type='text/css' media='all' />
+<script data-minify="1" type="text/javascript" src="wp-content/cache/min/1/attorna/demo2/wp-content/plugins/goodlayers-core/plugins/script738e.js?ver=1733679066" id="gdlr-core-plugin-js" data-rocket-defer defer></script>
+
+<script type="text/javascript" src="wp-includes/js/jquery/ui/effect.minb37e.js?ver=1.13.3" id="jquery-effects-core-js" data-rocket-defer defer></script>
+<script data-minify="1" type="text/javascript" src="wp-content/cache/min/1/attorna/demo2/wp-content/themes/attorna/js/mmenu738e.js?ver=1733679066" id="attorna-mmenu-js" data-rocket-defer defer></script>
+<script data-minify="1" type="text/javascript" src="wp-content/cache/min/1/attorna/demo2/wp-content/themes/attorna/js/jquery.superfish738e.js?ver=1733679066" id="jquery-superfish-js" data-rocket-defer defer></script>
+<script data-minify="1" type="text/javascript" src="wp-content/cache/min/1/attorna/demo2/wp-content/themes/attorna/js/script-core738e.js?ver=1733679066" id="attorna-script-core-js" data-rocket-defer defer></script>
+<script type="text/javascript" src="wp-includes/js/dist/hooks.min2757.js?ver=2810c76e705dd1a53b18" id="wp-hooks-js"></script>
+<script type="text/javascript" src="wp-includes/js/dist/i18n.minc33c.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+
+
+<script type="text/javascript" src="wp-content/plugins/wp-google-map-plugin/assets/js/mapsa2c7.js?ver=4.6.8" id="wpgmp-google-map-main-js" data-rocket-defer defer></script>
+<script type="text/javascript" src="wp-content/plugins/wp-google-map-plugin/assets/js/minified/wpgmp_frontend.mina2c7.js?ver=4.6.8" id="wpgmp-frontend-js" data-rocket-defer defer></script>
+
+</body>
+</html>
